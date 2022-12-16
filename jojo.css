@@ -4,6 +4,10 @@
 
   }
 
+@font-face {
+  font-family:"font-1" ;
+  src: url('/Image/sf_fedora-webfont.woff2');
+  }
 /* initialisation*/
 
   * {margin: 0px;padding: 0px;
@@ -95,20 +99,64 @@ nav > ul > li > a {
   animation: apparitionSousMenu 1s forwards;
 }
 
-
+/* Le margin et padding */
 h1{
   margin-top: 30px;
   text-align: center;
   font-size: 55px;
 }
 
+h2{
+  margin-left: 16px;
+}
+
+ol > li{
+  margin-left: 60px; 
+}
+
+p{
+  margin-left: 20px; 
+}
+/*Relatif à la page de StarPlatinum*/
+
+.StarPlat{
+  color:rgb(95, 47, 139);
+  text-shadow: 5px 0 0 rgba(148, 21, 148, 0.603);
+  font-family:"font-1"
+}
+
+.Tarocard img {
+  display: flex;
+  justify-content: flex-end;
+  width: 20px;
+  height: 20px;
+}
 
 
+/* background des pages sur les Stand*/
+
+
+.mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
+  color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
+
+main {
+  background: rgb(211, 203, 204);
+  width : 83%;
+  margin: 0 auto;
+  padding: 5px;
+  border: 9px solid; 
+  border-color: rgb(38, 26, 145);
+}
+
+
+
+
+
+/* Les id*/
 #welcome {margin: 6px; padding: 2px; color: crimson; background-color: aliceblue;}
 #mainpage {background-image: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg");
     color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
-#mainpage_SP {background: url("Image/SPORAA.gif") fixed ;
-    color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
+
 #texteenvert {margin: 5px; color: green; background-color: blanchedalmond;}
 #bordered {background-color: slategrey; border-style: inset; border-width: 8px; border-color: goldenrod;
             margin: 10px; padding: 3px;}
