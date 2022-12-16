@@ -128,11 +128,14 @@ p{
 .Tarocard img {
   display: flex;
   justify-content: flex-end;
-  width: 20px;
-  height: 20px;
+  width: 200px;
+  height: 200px;
 }
 
-
+.OraOra img {
+  width: 200px;
+  height: 200px;
+}
 
 /* background des pages sur les Stand*/
 
