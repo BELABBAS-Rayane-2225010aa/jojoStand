@@ -6,7 +6,7 @@
 
 @font-face {
   font-family:"font-1" ;
-  src: url('/Image/sf_fedora-webfont.woff2');
+  src: url('Image/sf_fedora-webfont.woff2') format("woff2");
   }
 /* initialisation*/
 
@@ -165,7 +165,7 @@ p{
 /* background des pages sur les Stand*/
 
 
-.mainpage_Stand {background: url("Image/StandBG.png") fixed ;
+.mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
   color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
 
 main {
