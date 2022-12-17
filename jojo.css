@@ -29,6 +29,21 @@
   }
 }
 
+@keyframes rainbow {
+  5% {color: yellow}
+  10% {color: yellowgreen}
+  20% {color: lightgreen}
+  30% {color: green}
+  40% {color: lightseagreen}
+  50% {color: blue}
+  60% {color: blueviolet}
+  70% {color: purple}
+  80% {color: darkred}
+  90% {color: crimson}
+  95% {color: red}
+  100% {color: orange}
+}
+
 
 nav {width: 100%;font-size: 18px;
   position: sticky;top: 0;}
@@ -120,6 +135,7 @@ p{
 
 /*Relatif à la page de StarPlatinum*/
 
+
 .StarPlat{
   color:rgb(95, 47, 139);
   text-shadow: 5px 0 0 rgba(148, 21, 148, 0.603);
@@ -158,12 +174,57 @@ main {
 
 
 /* Les id*/
-#welcome {margin: 6px; padding: 2px; color: crimson; background-color: aliceblue;}
-#mainpage {background-image: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg");
+#mainpage {background: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg") center fixed;
     color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
 
-#texteenvert {margin: 5px; color: green; background-color: blanchedalmond;}
+
+.StarPlat{
+  color:rgb(95, 47, 139);
+  text-shadow: 5px 0 0 rgba(148, 21, 148, 0.603);
+  font-family:"font-1"
+}
+
+.Tarocard img {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  height: 200px;
+}
+
+.OraOra img {
+  width: 200px;
+  height: 200px;
+}
+
+/* background des pages sur les Stand*/
+
+
+.mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
+  color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
+
+main {
+  background: rgba(211, 203, 204, 0.97);
+  width : 83%;
+  margin: 0 auto;
+  padding: 5px;
+  border: 9px solid; 
+  border-color: rgb(38, 26, 145);
+}
+
+/* Les id*/
+#mainpage {background: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg") center fixed;
+    color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
+
+
+
 #bordered {background-color: slategrey; border-style: inset; border-width: 8px; border-color: goldenrod;
             margin: 10px; padding: 3px;}
+
 a:hover {color: magenta;}
 a:active {color: darkred;}
+
+#standlist > h2 {animation: rainbow 5s infinite}
+
+#standlist {display: flex; flex-direction: column; align-items: center; 
+            border-style:solid; border-width: 5px; border-color: goldenrod;
+            background-color: bisque; margin-top: 50px; padding: 10px; margin-left: 25%; margin-right: 25%;}
