@@ -135,6 +135,7 @@ ol > li{
   padding: 1.25%;
   font-weight: bold;
   font-size: 23px;
+
 }
 
 ol > div >li{
@@ -152,6 +153,10 @@ p{
   letter-spacing: 2px;
 }
 
+ol{
+  display: flex;
+  flex-direction: column;
+}
 
 /*Relatif à la page de StarPlatinum*/
 
@@ -162,8 +167,13 @@ p{
 }
 
 .OraOra img {
+  border: 3px solid black;
   width: 200px;
   height: 200px;
+  position:absolute;
+  left: 55%;
+  top:50%;
+  transform: translateY(-50%);
 }
 
 /* Pour ZAWARUDO*/
