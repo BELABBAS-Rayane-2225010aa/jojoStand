@@ -145,8 +145,13 @@ ol > div >li{
 } 
 
 p{
-  margin-left: 20px; 
+  margin-left: 20px;
+  padding: 10px;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
+
 
 /*Relatif à la page de StarPlatinum*/
 
@@ -179,19 +184,18 @@ p{
 }
 
 .Tarocard img {
-  display: flex;
-  justify-content: flex-end;
   width: 200px;
   height: 200px;
   position:absolute;
-  top:0;
   right: 0;
+  top:50%;
+  transform: translateY(-50%);
 }
 
 .mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
   color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
 
-main {
+.Lemain {
   background: rgba(211, 203, 204, 0.97);
   width : 83%;
   margin: 0 auto;
@@ -200,6 +204,11 @@ main {
   border-color: rgb(38, 26, 145);
 }
 
+.ApparenceMain{
+  border: none;
+  background: none;
+  width: 35%;
+}
 /* Les id*/
 #mainpage {background: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg") center fixed;
     color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
