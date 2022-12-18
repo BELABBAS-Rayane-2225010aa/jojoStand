@@ -211,6 +211,18 @@ ul{
   font-family:"font-1"
 }
 
+.zaword{
+  color:rgb(199, 186, 4);
+  text-shadow: 5px 0 0 rgba(156, 121, 6, 0.603);
+  font-family:"font-1"
+}
+
+.KQTitre{
+  color:rgb(208, 115, 226);
+  text-shadow: 5px 0 0 rgba(187, 133, 192, 0.603);
+  font-family:"font-1"
+}
+
 .Stand img,
 .SHA img {
   border: 3px solid black;
@@ -232,11 +244,6 @@ ul{
   top: 50%;
 }
 
-.zaword{
-  color:rgb(199, 186, 4);
-  text-shadow: 5px 0 0 rgba(156, 121, 6, 0.603);
-  font-family:"font-1"
-}
 
 
 .Tarocard img {
