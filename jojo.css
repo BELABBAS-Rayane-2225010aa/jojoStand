@@ -1,10 +1,39 @@
+/* déclaration de variable*/
 :root{
     --hauteur-menu: 60px;
+
   }
 
-  * {margin: 0px;padding: 0px;
-    font-family: Montserrat, sans-serif;}
+@font-face {
+  font-family:"font-1" ;
+  src: url('Image/sf_fedora-webfont.woff2') format("woff2");
+  }
 
+  @keyframes rainbow {
+    5% {color: yellow}
+    10% {color: yellowgreen}
+    20% {color: lightgreen}
+    30% {color: green}
+    40% {color: lightseagreen}
+    50% {color: blue}
+    60% {color: blueviolet}
+    70% {color: purple}
+    80% {color: darkred}
+    90% {color: crimson}
+    95% {color: red}
+    100% {color: orange}
+  }
+
+/* initialisation*/
+
+* { margin: 0px;padding: 0px; font-family: Montserrat, sans-serif;}
+
+a { text-decoration: none;}
+    /* le sous menu */
+<<<<<<< HEAD
+.menu {display: flex; justify-content: space-around; 
+  background-color: goldenrod; box-shadow: 0px 3px 3px darkslategrey;
+=======
 @keyframes apparitionSousMenu {
   0% {
     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
@@ -23,6 +52,21 @@
 @keyframes rainbow {
   5% {color: yellow}
   10% {color: yellowgreen}
+  20% {color: lightgreen}
+  30% {color: green}
+  40% {color: lightseagreen}
+  50% {color: blue}
+  60% {color: blueviolet}
+  70% {color: purple}
+  80% {color: darkred}
+  90% {color: crimson}
+  95% {color: red}
+  100% {color: orange}
+}
+
+@keyframes rainbow {
+  5% {color: yellow}
+  10% {color: yellowgreen}
   20% {color: green}
   30% {color: lightseagreen}
   40% {color: aqua}
@@ -35,7 +79,7 @@
 }
 
 nav {width: 100%;font-size: 18px;
-  position: sticky;top: 0;}
+  position: sticky;top: 0;z-index: 200;}
 
 nav > ul {
     display: flex;
@@ -87,33 +131,177 @@ nav > ul > li > a {
   height: 50px;
   padding-left: 50px;
   width: 50%;
+>>>>>>> 0c385c06df5a6de3f4e34f2ccacfa6a69dddf924
   align-items: center;
+  padding: 15px;
+}
+
+
+
+.menu > li {text-align: center;}
+
+.menu > li > a {color:rgb(0, 0, 0);}
+.menu > li > a:hover {color: magenta;}
+
+.menu-deroulant {position: relative;}
+
+.liens-deroule {display: none; position: absolute; top: 125%; right: 100%; background-color: goldenrod;}
+
+.menu-deroulant:hover > ul {display: flex;}
+
+
+/* Le margin padding positionning flex */
+h1{
+  margin-top: 25px;
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+h2{
+  margin-left: 20px;
+  font-size:42px;
+  padding:5px;
+  font-family: "font-1";
+  color : rainbow;
+}
+
+ol > li{
+  margin-left: 60px; 
+  padding: 1.25%;
+  font-weight: bold;
+  font-size: 23px;
+
+}
+
+ol > div >li{
+  margin-left: 45px; 
+  padding: 1.25%;
+  font-weight: bold;
+  font-size: 21px;
+} 
+
+p{
+  margin-left: 20px;
+  padding: 10px;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 2%;
+}
+
+ol{
   display: flex;
+  flex-direction: column;
 }
 
-.liens-deroule > li:hover {
-  background-color: rgba(33, 105, 236, 0.3);
+ul{
+  display: flex;
+  padding: 2px;
 }
 
-.liens-deroule > li:hover > a {
-  color: white;
+.capcaitéflex {
+  display: flex;
+  padding: 2px;
+  list-style-type: none;
+  margin-bottom: 30%;
+  width: 30%;
+  height: 30%;
+  line-height: 25px;
+  justify-content: space-around;
 }
 
-.menu-deroulant:hover > .liens-deroule {
-  animation: apparitionSousMenu 1s forwards;
+.titreCapa{
+  display: flex; 
+  font-weight: bold;
+  justify-content: space-around;
 }
 
 
 
+.positioning{
+  position: relative;
+  margin-top: 30px;
+  
+}
+
+.Lemain {
+  background: rgba(211, 203, 204, 0.97);
+  width : 83%;
+  margin: 0 auto;
+  padding: 5px;
+  border: 9px solid; 
+  border-color: rgb(38, 26, 145);
+}
+
+.ApparenceMain{
+  border: none;
+  background: none;
+  width: 45%;
+}
+/*Relatif aux Subpages*/
+
+.StarPlat{
+  color:rgb(95, 47, 139);
+  text-shadow: 5px 0 0 rgba(148, 21, 148, 0.603);
+  font-family:"font-1"
+}
+
+.zaword{
+  color:rgb(199, 186, 4);
+  text-shadow: 5px 0 0 rgba(156, 121, 6, 0.603);
+  font-family:"font-1"
+}
+
+.KQTitre{
+  color:rgb(208, 115, 226);
+  text-shadow: 5px 0 0 rgba(187, 133, 192, 0.603);
+  font-family:"font-1"
+}
+
+.Stand img,
+.SHA img {
+  border: 3px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.Stand img{
+  position:absolute;
+  left: 55%;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.SHA img {
+  position:absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  top: 50%;
+}
 
 
-#mainpage {color : rgb(0, 0, 0); 
-  background: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg") center fixed;   background-size:cover;}
+
+.Tarocard img {
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
+  color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
+
+/* Les id*/
+#mainpage {background: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg") center fixed;
+    color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
 
 
-#bordered { text-align: center; background-color: slategrey; border-style: inset; border-width: 8px; border-color: goldenrod;
-            margin: 15px; padding: 3px;}
 
+#bordered {background-color: slategrey; border-style: inset; border-width: 8px; border-color: goldenrod;
+            margin: 10px; padding: 3px;}
 
 a:hover {color: magenta;}
 a:active {color: darkred;}
