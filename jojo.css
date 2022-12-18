@@ -8,12 +8,32 @@
   font-family:"font-1" ;
   src: url('Image/sf_fedora-webfont.woff2') format("woff2");
   }
+
+  @keyframes rainbow {
+    5% {color: yellow}
+    10% {color: yellowgreen}
+    20% {color: lightgreen}
+    30% {color: green}
+    40% {color: lightseagreen}
+    50% {color: blue}
+    60% {color: blueviolet}
+    70% {color: purple}
+    80% {color: darkred}
+    90% {color: crimson}
+    95% {color: red}
+    100% {color: orange}
+  }
+
 /* initialisation*/
 
-  * {margin: 0px;padding: 0px;
-    font-family: Montserrat, sans-serif;}
+* { margin: 0px;padding: 0px; font-family: Montserrat, sans-serif;}
 
+a { text-decoration: none;}
     /* le sous menu */
+<<<<<<< HEAD
+.menu {display: flex; justify-content: space-around; 
+  background-color: goldenrod; box-shadow: 0px 3px 3px darkslategrey;
+=======
 @keyframes apparitionSousMenu {
   0% {
     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
@@ -98,21 +118,24 @@ nav > ul > li > a {
   height: 50px;
   padding-left: 50px;
   width: 50%;
+>>>>>>> 0c385c06df5a6de3f4e34f2ccacfa6a69dddf924
   align-items: center;
-  display: flex;
+  padding: 15px;
 }
 
-.liens-deroule > li:hover {
-  background-color: rgba(33, 105, 236, 0.3);
-}
 
-.liens-deroule > li:hover > a {
-  color: white;
-}
 
-.menu-deroulant:hover > .liens-deroule {
-  animation: apparitionSousMenu 1s forwards;
-}
+.menu > li {text-align: center;}
+
+.menu > li > a {color:rgb(0, 0, 0);}
+.menu > li > a:hover {color: magenta;}
+
+.menu-deroulant {position: relative;}
+
+.liens-deroule {display: none; position: absolute; top: 125%; right: 100%; background-color: goldenrod;}
+
+.menu-deroulant:hover > ul {display: flex;}
+
 
 /* Le margin padding positionning flex */
 h1{
@@ -275,3 +298,5 @@ a:active {color: darkred;}
 #standlist {display: flex; flex-direction: column; align-items: center; 
             border-style:solid; border-width: 5px; border-color: goldenrod;
             background-color: bisque; margin-top: 50px; padding: 10px; margin-left: 25%; margin-right: 25%;}
+
+
