@@ -6,7 +6,7 @@
 
 @font-face {
   font-family:"font-1" ;
-  src: url('/Image/sf_fedora-webfont.woff2');
+  src: url('Image/sf_fedora-webfont.woff2') format("woff2");
   }
 /* initialisation*/
 
@@ -46,7 +46,7 @@
 
 
 nav {width: 100%;font-size: 18px;
-  position: sticky;top: 0;}
+  position: sticky;top: 0;z-index: 200;}
 
 nav > ul {
     display: flex;
@@ -114,54 +114,82 @@ nav > ul > li > a {
   animation: apparitionSousMenu 1s forwards;
 }
 
-/* Le margin et padding */
+/* Le margin padding positionning flex */
 h1{
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center;
-  font-size: 55px;
+  font-size: 80px;
+  margin-bottom: 30px;
 }
 
 h2{
-  margin-left: 16px;
+  margin-left: 20px;
+  font-size:42px;
+  padding:5px;
+  font-family: "font-1";
+  color : rainbow;
 }
 
 ol > li{
   margin-left: 60px; 
+  padding: 1.25%;
+  font-weight: bold;
+  font-size: 23px;
+
 }
+
+ol > div >li{
+  margin-left: 45px; 
+  padding: 1.25%;
+  font-weight: bold;
+  font-size: 21px;
+} 
 
 p{
-  margin-left: 20px; 
+  margin-left: 20px;
+  padding: 10px;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 2%;
 }
 
-/*Relatif à la page de StarPlatinum*/
-
-
-
-.StarPlat{
-  color:rgb(95, 47, 139);
-  text-shadow: 5px 0 0 rgba(148, 21, 148, 0.603);
-  font-family:"font-1"
-}
-
-.Tarocard img {
+ol{
   display: flex;
-  justify-content: flex-end;
-  width: 200px;
-  height: 200px;
+  flex-direction: column;
 }
 
-.OraOra img {
-  width: 200px;
-  height: 200px;
+ul{
+  display: flex;
+  padding: 2px;
 }
 
-/* background des pages sur les Stand*/
+.capcaitéflex {
+  display: flex;
+  padding: 2px;
+  list-style-type: none;
+  margin-bottom: 30%;
+  width: 30%;
+  height: 30%;
+  line-height: 25px;
+  justify-content: space-around;
+}
+
+.titreCapa{
+  display: flex; 
+  font-weight: bold;
+  justify-content: space-around;
+}
 
 
-.mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
-  color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
 
-main {
+.positioning{
+  position: relative;
+  margin-top: 30px;
+  
+}
+
+.Lemain {
   background: rgba(211, 203, 204, 0.97);
   width : 83%;
   margin: 0 auto;
@@ -169,6 +197,66 @@ main {
   border: 9px solid; 
   border-color: rgb(38, 26, 145);
 }
+
+.ApparenceMain{
+  border: none;
+  background: none;
+  width: 45%;
+}
+/*Relatif aux Subpages*/
+
+.StarPlat{
+  color:rgb(95, 47, 139);
+  text-shadow: 5px 0 0 rgba(148, 21, 148, 0.603);
+  font-family:"font-1"
+}
+
+.zaword{
+  color:rgb(199, 186, 4);
+  text-shadow: 5px 0 0 rgba(156, 121, 6, 0.603);
+  font-family:"font-1"
+}
+
+.KQTitre{
+  color:rgb(208, 115, 226);
+  text-shadow: 5px 0 0 rgba(187, 133, 192, 0.603);
+  font-family:"font-1"
+}
+
+.Stand img,
+.SHA img {
+  border: 3px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.Stand img{
+  position:absolute;
+  left: 55%;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.SHA img {
+  position:absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  top: 50%;
+}
+
+
+
+.Tarocard img {
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
+  color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
 
 /* Les id*/
 #mainpage {background: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg") center fixed;

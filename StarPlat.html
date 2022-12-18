@@ -8,6 +8,8 @@
     </head> 
 
     <body class="mainpage_Stand">
+    <audio id="SPTheWorld" src="Image/SPTheWorld.mp3" preload="auto"></audio>
+    <audio id="ORAAA" src="Image/ORA-ORA.mp3" preload="auto"></audio>
 
     <!--l'entête-->   
 
@@ -18,38 +20,46 @@
             </ul>
         </nav>
     <!--Le Corps (main)-->
-        <main>
+        <main class="Lemain">
             <h1 class="StarPlat"> Star Platinum </h1>
-            <span class="OraOra"> <img src="Image/StarPlatinum.jpg" title="ora ora ora ora ora ora ora"></span>
-            <div>
+            <div class="positioning">
             <h2>Sommaire</h2>
 
             <ol>
                 <li><a href="#vers-intro"> Intro</a></li>
                 <li><a href="#vers-apparence">Apparence</a></li>
                 <li><a href="#vers-capacité">Capacité</a></li>
+                <a class="Tarocard" href="javascript:plaSound('SPTheWorld');"> <img src="Image/SPTarot.png" alt="Carte du tarot(SPTheWorld)" onclick="document.getElementById('SPTheWorld').play();"> </a>
             </ol>
             </div>
             
             <ol>
-                <li id="vers-intro"> <h3><strong>Intro</strong></h3></li>
-                    <p> Le Stand de Jotaro Kujo ,petit-fils de Joseph Joestar, à éveillé son stand à 17ans
-                    au moment où Dio Brando<em>principale antagoniste du manga <strong>ennemie jurée de la famille joestar</strong></em> 
-                    à lui même éveiller son Stand .  </p>
-                <li id="vers-apparence"><h3><strong>Apparence</strong></h3></li>
-                    <audio id="ORAAA" src="Image/ORA-ORA.mp3" preload="auto"></audio>
-                    <p>StarPlatinum est un colosse violet torse nue avec des gants noir ou blanc selon la partie. Il est le seul stand avec son crie de guerre: <a class="oraa" href="javascript:plaSound('ORAAA');" onclick="document.getElementById('ORAAA').play();">Ora ora ora</a> a chacun de ses coup.</p>
-                <li id="vers-capacité"><h3><strong>Capacité</strong></h3></li>
-                <audio id="SPTheWorld" src="Image/SPTheWorld.mp3" preload="auto"></audio>
-                    <p>StarPlatinum étant l'un des stand les plus fort en combat rapproché et l'un des stands les plus précis(capable de d'arréter une balle a bout portante). sa portée n'est que de 2m.</p>
-                    <ul>
-                        <li><strong>Force</strong> : Star Platinum possède une force immense, capable d'arrêter d'un seul coup de poing un semi-remorque 
-                        fonçant sur une Jeep transportant 4 hommes et une fille. Il peut aussi détruire des mètres de diamant artificiel en quelques 
-                        secondes. En plus de cela ce stand protège son hôte, en effet il peut agir librement lorsque c'est pour protéger 
-                        Jotaro, par exemple lorque Dio arrête le temps ou encore lorsque jotaro est dans le coma. </li>
-                        <li><strong>Star Finger</strong>: Star Platinum peut allonger son doigt sur 2m <em>il s'en sert une seul et unique fois</em>  </li>
-                        <li><strong>StarPlatinum:The World</strong>: Star Platinum étant "le même type de stand" que StarPlatinum il peut lui aussi arrêter.<a class="Tarocard" href="javascript:plaSound('SPTheWorld');"> <img src="Image/SPTarot.png" alt="Carte du tarot(SPTheWorld)" onclick="document.getElementById('SPTheWorld').play();"> </a></li>
-                    </ul>
+                <div class="positioning">
+                    <li id="vers-intro"> Intro</li>
+                        <p> Le Stand de Jotaro Kujo ,petit-fils de Joseph Joestar, à éveillé son stand à 17ans
+                        au moment où Dio Brando<em>principale antagoniste du manga <strong>ennemie jurée de la famille joestar</strong></em> 
+                        à lui même éveiller son Stand .  </p>
+                </div>
+                <div class="positioning">
+                    <li id="vers-apparence">Apparence</li>
+                       <main class="ApparenceMain">
+                        <p>StarPlatinum est un colosse violet torse nue avec des gants noir ou blanc selon la partie. Il est le seul stand avec son crie de guerre: 
+                        <a class="oraa" href="javascript:plaSound('ORAAA');" onclick="document.getElementById('ORAAA').play();">Ora ora ora</a> a chacun de ses coup.</p></main>
+                        <span class="Stand"> <img src="Image/StarPlatinum.jpg" title="ora ora ora ora ora ora ora"></span>
+                </div>
+                <div class="positioning">
+                    <li id="vers-capacité">Capacité</li>
+                    
+                        <p>StarPlatinum étant l'un des stand les plus fort en combat rapproché et l'un des stands les plus précis(capable de d'arréter une balle a bout portante). sa portée n'est que de 2m.</p>
+                        <div class="titreCapa"><span>Force</span><span>Star Finger</span><span>StarPlatinum:The World:</span></div>
+                        <ul style="display: flex; justify-content: space-around; ">
+                            <li  class="capcaitéflex">Star Platinum possède une force immense, qui peut détruire du diamant artificiel en quelques 
+                            secondes. En plus de cela ce stand protège son hôte, en effet il peut agir librement lorsque c'est pour protéger 
+                            Jotaro, par exemple lorque Dio arrête le temps ou encore lorsque jotaro est dans le coma. </li>
+                            <li  class="capcaitéflex"> Star Platinum peut allonger son doigt sur 2m. Il s'en sert une seul et unique fois </li>
+                            <li  class="capcaitéflex">Star Platinum étant "le même type de stand" que StarPlatinum il peut lui aussi arrêter.</li>
+                        </ul>
+                </div>
             </ol>
 
         </main>       
