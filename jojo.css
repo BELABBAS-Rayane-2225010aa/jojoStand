@@ -306,7 +306,7 @@ a:active {color: darkred;}
 
 #standlist {display:flex; flex-direction: column; align-items: center;
   margin-left: 25%; margin-right: 25%; margin-top: 15%; background-color: bisque; padding: 10px; border-style:inset; border-width: 5px; border-color: goldenrod;}
-#stands, h2 {animation: rainbow 4s infinite;}
+#stands, h2 {animation: rainbow 4s infinite;font-size: 35px; list-style-type: none; font-weight: bold; }
 
 #StarPlat {color: aquamarine;}
 #StarPlat:hover {color: magenta;}
