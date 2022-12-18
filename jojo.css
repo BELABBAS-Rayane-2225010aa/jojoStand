@@ -257,6 +257,13 @@ ul{
   font-family:"font-1"
 }
 
+
+.MIHTitre{
+  color:rgb(231, 238, 202);
+  text-shadow: 5px 0 0 rgba(131, 139, 94, 0.904);
+  font-family:"font-1"
+}
+
 .Stand img,
 .SHA img {
   border: 3px solid black;
