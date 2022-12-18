@@ -201,7 +201,7 @@ ul{
 .ApparenceMain{
   border: none;
   background: none;
-  width: 35%;
+  width: 45%;
 }
 /*Relatif aux Subpages*/
 
@@ -211,7 +211,7 @@ ul{
   font-family:"font-1"
 }
 
-.OraOra img {
+.Stand img {
   border: 3px solid black;
   width: 200px;
   height: 200px;
