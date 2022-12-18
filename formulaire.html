@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="jojo.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+                    <li class="fa fa-home"><a id="home" href="index.html" title="Aller à la page d'acceuil"> Main Page</a></li>
+                    <li><a id="form" href="formulaire.html" title="Formulaire de satisfaction"> Formulaire </a></li>
+        </ul>
+    </nav>
+    <h3 id="formh3"> Donnez nous votre avis sur notre site </h3>
+    <form id="form" action="mailto:adam.DE-ANGELI@etu.univ-amu.fr" method="post" enctype:"text/plain">
+        <label for="email">Adresse Mail:</label>
+        <input id="email" type="text" name="Mail" value="votre.mail@exemple.com" size="30"><br>
+        <label for="nom">Nom Prenom:</label><br>
+        <input id="nom" type="text" name="nom" value=" DUPONT Pierre"><br>
+        <input id="note" type="radio" name="note"><br>
+        <textarea name="votreavis" rows="3" cols="50"> Dites nous ce qui vous a plu ou déplu </textarea>
+    </form>
+</body>
+</html>
