@@ -30,6 +30,7 @@
 * { margin: 0px;padding: 0px; font-family: Montserrat, sans-serif;}
 
 a { text-decoration: none;}
+
     /* le sous menu */
 
 .menu {display: flex; justify-content: space-around; list-style-type: none;
@@ -212,13 +213,9 @@ a:hover {color: magenta;}
 a:active {color: darkred;}
 
 #standlist {display:flex; flex-direction: column; align-items: center;
-<<<<<<< HEAD
-  margin-left: 25%; margin-right: 25%; margin-top: 10%; background-color: bisque; padding: 10px; border-style:inset; border-width: 5px; border-color: goldenrod;}
-#stands, h2 {animation: rainbow 4s infinite;}
-=======
   margin-left: 25%; margin-right: 25%; margin-top: 15%; background-color: bisque; padding: 10px; border-style:inset; border-width: 5px; border-color: goldenrod;}
 #stands, h2 {animation: rainbow 4s infinite;font-size: 35px; list-style-type: none; font-weight: bold; }
->>>>>>> 30ea738f77f987bf27bf5e2e0e54eb30c0d18104
+
 
 #SP > a {color:aqua;}
 #SP:hover > a {color: magenta;}
