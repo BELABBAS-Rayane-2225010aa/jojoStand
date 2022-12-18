@@ -151,6 +151,7 @@ p{
   line-height: 25px;
   font-size: 18px;
   letter-spacing: 2px;
+  margin-bottom: 2%;
 }
 
 ol{
@@ -163,12 +164,29 @@ ul{
   padding: 2px;
 }
 
+.capcaitéflex {
+  display: flex;
+  padding: 2px;
+  list-style-type: none;
+  margin-bottom: 30%;
+  width: 30%;
+  height: 30%;
+  line-height: 25px;
+  justify-content: space-around;
+}
+
+.titreCapa{
+  display: flex; 
+  font-weight: bold;
+  justify-content: space-around;
+}
+
 
 
 .positioning{
-  border: 2px solid rgb(66, 245, 200);
   position: relative;
   margin-top: 30px;
+  
 }
 
 .Lemain {
