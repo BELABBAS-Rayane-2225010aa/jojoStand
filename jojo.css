@@ -32,9 +32,6 @@ a { text-decoration: none;}
     /* le sous menu */
 
 .menu {display: flex; justify-content: space-around; 
-<<<<<<< HEAD
-  background-color: goldenrod; box-shadow: 0px 3px 3px darkslategrey;
-=======
       background-color: goldenrod; box-shadow: 0px 3px 3px darkslategrey;}
 @keyframes apparitionSousMenu {
   0% {
@@ -120,7 +117,6 @@ nav > ul > li > a {
   height: 50px;
   padding-left: 50px;
   width: 50%;
->>>>>>> 2e46d5d54c51c68c7da15b32d66e22e41d6eed0c
   align-items: center;
   padding: 15px;
 }
