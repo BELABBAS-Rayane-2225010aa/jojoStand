@@ -32,6 +32,9 @@ a { text-decoration: none;}
     /* le sous menu */
 
 .menu {display: flex; justify-content: space-around; 
+<<<<<<< HEAD
+  background-color: goldenrod; box-shadow: 0px 3px 3px darkslategrey;
+=======
       background-color: goldenrod; box-shadow: 0px 3px 3px darkslategrey;}
 @keyframes apparitionSousMenu {
   0% {
@@ -117,6 +120,7 @@ nav > ul > li > a {
   height: 50px;
   padding-left: 50px;
   width: 50%;
+>>>>>>> 2e46d5d54c51c68c7da15b32d66e22e41d6eed0c
   align-items: center;
   padding: 15px;
 }
@@ -125,14 +129,21 @@ nav > ul > li > a {
 
 .menu > li {text-align: center;}
 
-.menu > li > a {color:rgb(0, 0, 0);}
+.menu > li > a {display:flexbox; color:rgb(0, 0, 0);}
 .menu > li > a:hover {color: magenta;}
 
 .menu-deroulant {position: relative;}
 
-.liens-deroule {display: none; position: absolute; top: 125%; right: 100%; background-color: goldenrod;}
+.liens-deroule {display: none; 
+  position: absolute; top: 125%; right: 50%; 
+  background-color: goldenrod; border-radius: 5%; 
+  border-top-style:inset; border-top-color:blue; border-width: 3px;
+}
 
-.menu-deroulant:hover > ul {display: flex;}
+.menu-deroulant:hover > .liens-deroule {list-style-type:none;display: flex;}
+.sous-menu-deroulant{display:flex; justify-content: end;}
+.partie{display:none;}
+.sous-menu-deroulant:hover > .partie{display: block;}
 
 
 /* Le margin padding positionning flex */
@@ -297,10 +308,14 @@ ul{
 a:hover {color: magenta;}
 a:active {color: darkred;}
 
-#standlist > h2 {animation: rainbow 5s infinite}
+#standlist {display:flex; flex-direction: column; align-items: center;
+  margin-left: 25%; margin-right: 25%; margin-top: 15%; background-color: bisque; padding: 10px; border-style:inset; border-width: 5px; border-color: goldenrod;}
+#stands, h2 {animation: rainbow 4s infinite;}
 
-#standlist {display: flex; flex-direction: column; align-items: center; 
-            border-style:solid; border-width: 5px; border-color: goldenrod;
-            background-color: bisque; margin-top: 50px; padding: 10px; margin-left: 25%; margin-right: 25%;}
+#StarPlat {color: aquamarine;}
+#StarPlat:hover {color: magenta;}
+
+#TheWorld {color: goldenrod;}
+#TheWorld:hover {color: green;}
 
 
