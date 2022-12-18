@@ -25,6 +25,7 @@
     100% {color: orange}
   }
 
+
 /* initialisation*/
 
 * { margin: 0px;padding: 0px; font-family: Montserrat, sans-serif;}
@@ -198,15 +199,15 @@ ul{
 }
 
 .mainpage_Stand {background: url("Image/StandsBG.jpg") fixed ;
-  color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
+  color : hsl(44, 91%, 48%); background-size: 1720px, 1080px;}
 
 /* Les id*/
 #mainpage {background: url("https://static.bandainamcoent.eu/high/jojo/jojo-bizarre-adventure-all-star-battle-r/02-news/JOJOASBR_launchTrailer_thumbnail.jpg") center fixed;
     color : rgb(0, 0, 0); background-size: 1720px, 1080px;}
 
+#Intro {color:azure; background-color: rgba(26, 241, 224, 0.584); border-radius: 5px; margin: 5px; border-style: inset; border-width: 3px; border-color: goldenrod;}
 
-
-#bordered {background-color: slategrey; border-style: inset; border-width: 8px; border-color: goldenrod;
+#bordered {background-color: rgba(112, 128, 144, 0.727); border-style: inset; border-width: 8px; border-color: goldenrod;
             margin: 10px; padding: 3px;}
 
 a:hover {color: magenta;}
@@ -217,10 +218,39 @@ a:active {color: darkred;}
 #stands, h2 {animation: rainbow 4s infinite;font-size: 35px; list-style-type: none; font-weight: bold; }
 
 
-#SP > a {color:aqua;}
+#SP > a {color:darkcyan;}
 #SP:hover > a {color: magenta;}
 
 #TW > a {color: goldenrod;}
 #TW:hover > a {color: green;}
 
+#KQ > a {color:darkgray;}
+#KQ:hover > a {color:cornflowerblue;}
+
+#KC > a {color: crimson;}
+#KC:hover > a {color: slateblue;}
+
+#MIH > a {color:floralwhite;}
+#MIH:hover > a {color: gold;}
+
+#FormBody {background: url(Image/JOJO-FormBg.png) center fixed; background-size:cover;}
+
+form {margin-top: 50px}
+
+.InputTitle {color:darkcyan;}
+
+#email {color: blue; text-decoration:underline; background-color:antiquewhite; padding-left: 5px;}
+#nom {background-color: antiquewhite; padding-left: 5px;}
+
+#Radio {border-style: dotted; background-color: lightgray;}
+#Radio > input {margin-top: 10px; margin-bottom: 25px;}
+.TauxLabel {font-size: 12px; font-family:sans-serif;}
+#PasSatisL {color: red;}
+#PeuSatisL {color: orange;}
+#NeutreL {color: yellow;}
+#SatisL {color: yellowgreen;}
+#TresSatisL {color: green;}
+
+#AvisArea {background-color: lightslategray; color:burlywood}
+#Submit:hover {animation: rainbow 4s infinite;}
 

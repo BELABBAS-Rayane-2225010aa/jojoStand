@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="Image/Jojo-Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
     <link rel="stylesheet" href="jojo.css">
 </head>
-<body>
+<body id="FormBody">
     <nav>
         <ul class="menu">
                     <li class="fa fa-home"><a id="home" href="index.html" title="Aller à la page d'acceuil"> Main Page</a></li>
                     <li><a id="form" href="formulaire.html" title="Formulaire de satisfaction"> Formulaire </a></li>
         </ul>
     </nav>
-    <h3 id="formh3"> Donnez nous votre avis sur notre site </h3>
+    <h2 id="formh3"> Donnez nous votre avis sur notre site </h2>
     <form id="form" action="mailto:adam.DE-ANGELI@etu.univ-amu.fr" method="post" enctype:"text/plain">
-        <label for="email">Adresse Mail:</label>
-        <input id="email" type="text" name="Mail" value="votre.mail@exemple.com" size="30"><br>
-        <label for="nom">Nom Prenom:</label><br>
-        <input id="nom" type="text" name="nom" value=" DUPONT Pierre"><br>
-        <input id="note" type="radio" name="note"><br>
-        <textarea name="votreavis" rows="3" cols="50"> Dites nous ce qui vous a plu ou déplu </textarea>
+        <p>
+        <label for="email" class="InputTitle">Adresse Mail:</label>
+        <input id="email" type="text" name="Mail" placeholder="votre.mail@exemple.com" size="30"><br>
+        <label for="nom" class="InputTitle">Nom Prenom:</label><br>
+        <input id="nom" type="text" name="nom" placeholder="DUPONT Pierre"><br>
+        <span class="InputTitle">Taux de satisfaction:<br></span>
+        <span id="Radio">
+        <input id="NonSatis" type="radio" name="note" value="Pas Satisfait">
+        <label for="NonSatis" id="PasSatisL"> <span class="TauxLabel">Pas satisfait</span></label>
+        <input id="PeuSatis" type="radio" name="note" value="Peu Satisfait">
+        <label for="PeuSatis" id="PeuSatisL"> <span class="TauxLabel"> Peu satisfait</span></label>        
+        <input id="Neutre" type="radio" name="note" value="Neutre">
+        <label for="Neutre" id="NeutreL"> <span class="TauxLabel">Neutre</span></label>
+        <input id="Satis" type="radio" name="note" value="Statisfait">
+        <label for="Satis" id="SatisL"> <span class="TauxLabel"> Satisfait</span></label>
+        <input id="TresSatis" type="radio" name="note" value="Tres Satisfait">
+        <label for="TresSatis" id="TresSatisL"> <span class="TauxLabel">Très satisfait</span></label>
+        </span>
+        <br>
+        <textarea id="AvisArea" name="votreavis" rows="3" cols="50"> Dites nous ce qui vous a plu ou déplu </textarea><br>
+        <input id="Submit" type="submit" value="Envoyer">
+    </p>
     </form>
 </body>
 </html>
