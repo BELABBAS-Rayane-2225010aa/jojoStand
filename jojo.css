@@ -30,108 +30,9 @@
 
 a { text-decoration: none;}
     /* le sous menu */
-<<<<<<< HEAD
+
 .menu {display: flex; justify-content: space-around; 
   background-color: goldenrod; box-shadow: 0px 3px 3px darkslategrey;
-=======
-@keyframes apparitionSousMenu {
-  0% {
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-    border-top: 3px solid #2169EC;
-  }
-  30% {
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-  }
-  100% {
-    max-height: 50em;
-    border-top: 3px solid #2169EC;
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-  }
-}
-
-@keyframes rainbow {
-  5% {color: yellow}
-  10% {color: yellowgreen}
-  20% {color: lightgreen}
-  30% {color: green}
-  40% {color: lightseagreen}
-  50% {color: blue}
-  60% {color: blueviolet}
-  70% {color: purple}
-  80% {color: darkred}
-  90% {color: crimson}
-  95% {color: red}
-  100% {color: orange}
-}
-
-@keyframes rainbow {
-  5% {color: yellow}
-  10% {color: yellowgreen}
-  20% {color: green}
-  30% {color: lightseagreen}
-  40% {color: aqua}
-  50% {color: violet}
-  60% {color: purple}
-  70% {color: darkred}
-  80% {color: crimson}
-  90% {color: orangered}
-  100% {color: orange}
-}
-
-nav {width: 100%;font-size: 18px;
-  position: sticky;top: 0;z-index: 200;}
-
-nav > ul {
-    display: flex;
-    text-align:center;
-    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
-    height: var(--hauteur-menu);
-    }
-           
-nav ul {
-    list-style-type: none;
-        }
-          
- nav > ul > li {
-   background-color: goldenrod;
-   position:relative;
-   height: 100%;
-   flex: 1;
-   }
-
-nav > ul > li > a {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%);
-}
-  
-  li a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .menu-deroulant > a:after{
-    content: '▼';
-    font-size: 15px;
-    margin-left: 7px;
-    display: inline-block;
-  }  
-
-.liens-deroule {
-  margin-top: var(--hauteur-menu);
-  width: 50%;
-  text-align: left;
-  background-color: goldenrod;
-  border-radius: 8px;
-  overflow: hidden;
-  max-height: 0;
-}
-
-.liens-deroule > li > a {
-  height: 50px;
-  padding-left: 50px;
-  width: 50%;
->>>>>>> 0c385c06df5a6de3f4e34f2ccacfa6a69dddf924
   align-items: center;
   padding: 15px;
 }
@@ -140,14 +41,21 @@ nav > ul > li > a {
 
 .menu > li {text-align: center;}
 
-.menu > li > a {color:rgb(0, 0, 0);}
+.menu > li > a {display:flexbox; color:rgb(0, 0, 0);}
 .menu > li > a:hover {color: magenta;}
 
 .menu-deroulant {position: relative;}
 
-.liens-deroule {display: none; position: absolute; top: 125%; right: 100%; background-color: goldenrod;}
+.liens-deroule {display: none; 
+  position: absolute; top: 125%; right: 50%; 
+  background-color: goldenrod; border-radius: 5%; 
+  border-top-style:inset; border-top-color:blue; border-width: 3px;
+}
 
-.menu-deroulant:hover > ul {display: flex;}
+.menu-deroulant:hover > .liens-deroule {list-style-type:none;display: flex;}
+.sous-menu-deroulant{display:flex; justify-content: end;}
+.partie{display:none;}
+.sous-menu-deroulant:hover > .partie{display: block;}
 
 
 /* Le margin padding positionning flex */
@@ -306,9 +214,9 @@ ul{
 a:hover {color: magenta;}
 a:active {color: darkred;}
 
-#MainList {display:flex; flex-direction: column; align-items: center;
+#standlist {display:flex; flex-direction: column; align-items: center;
   margin-left: 25%; margin-right: 25%; margin-top: 15%; background-color: bisque; padding: 10px; border-style:inset; border-width: 5px; border-color: goldenrod;}
-#Stands {animation: rainbow 4s infinite;}
+#stands, h2 {animation: rainbow 4s infinite;}
 
 #StarPlat {color: aquamarine;}
 #StarPlat:hover {color: magenta;}
