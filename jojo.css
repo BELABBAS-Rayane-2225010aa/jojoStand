@@ -184,6 +184,7 @@ ul{
 
 
 .positioning{
+  border: 2px solid lightcoral;
   position: relative;
   margin-top: 30px;
   
@@ -211,14 +212,25 @@ ul{
   font-family:"font-1"
 }
 
-.Stand img {
+.Stand img,
+.SHA img {
   border: 3px solid black;
   width: 200px;
   height: 200px;
+}
+
+.Stand img{
   position:absolute;
   left: 55%;
   top:50%;
   transform: translateY(-50%);
+}
+
+.SHA img {
+  position:absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  top: 50%;
 }
 
 .zaword{
